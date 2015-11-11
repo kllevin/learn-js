@@ -1,0 +1,83 @@
+/**
+ * Base styles.
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  padding: 100px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: crimson;
+  font-size: 2.3em;
+  font-weight: 400;
+  margin: 0 0 1.5em;
+}
+
+
+/**
+ * The game area.
+ */
+
+.game {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: center;
+  width: 90%;
+}
+
+
+/**
+ * The board.
+ */
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 2px inset silver;
+  border-left-color: gray;
+  border-right-color: lightgray;
+  border-bottom-color: whitesmoke;
+  background-originx: content-box;
+  cursor: pointer;
+  text-align: center;
+  font-size: 30px;
+  transition: all 0.15s;
+  display: inline-block;
+}
+
+.cell:hover,
+.cell.is-active {
+  background-color: crimson;
+  color: white;
+}
