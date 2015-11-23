@@ -94,8 +94,8 @@
 
       if (count > 0) {
         for (var i = 0; i < count; i++) {
-          var randomX = Math.round(Math.random() * (this.BOARD_SIZE.rows - 1));
-          var randomY = Math.round(Math.random() * (this.BOARD_SIZE.cols - 1));
+          var randomX = Math.round(Math.random() * (this.BOARD_SIZE.cols - 1));
+          var randomY = Math.round(Math.random() * (this.BOARD_SIZE.rows - 1));
           // console.log(randomX + "," + randomY);
           // document.querySelector("#" + randomX + "-" + randomY)
           MineSweeper.BOARD_MAP[randomX][randomY] = "*";
